@@ -13,3 +13,16 @@ numeri
 array
 oggetti
 trow stessa cosa di result è come retrn ma inte
+per creare un modello uso map 
+
+i'm try to uil a grid of card with boostrap using information from an exported API THIS API: 'https://swapi.dev/api/starships'
+
+
+To create a grid of cards using Bootstrap and data from the SWAPI Starships API, you would follow these steps:
+
+1 Fetch data from the SWAPI Starships API using JavaScript fetch function or another 	method of your choice.
+2 Parse the JSON response to get an array of starship objects.
+3 Create a Bootstrap container and row structure.
+4 Iterate over the array of starship objects and for each object, create a Bootstrap card inside a column.
+5 Populate the card with the relevant data from the starship object.
+6 Apply Bootstrap grid classes to control the layout and responsiveness of the cards.
