@@ -1,6 +1,6 @@
 import { fetchAllPeople, fetchAllFilms } from "./modules/api.js";
 import { renderList, renderCard } from "./modules/render.js";
-import { filterList } from './modules/utils.js';
+// import { filterList } from './modules/utils.js';
 
 // fetch dei film e composizione delle <option> della <select>
 const films = await fetchAllFilms();
