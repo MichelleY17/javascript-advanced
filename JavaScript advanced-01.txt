@@ -1,0 +1,15 @@
+JavaScript advanced
+
+API application programming interface, cache API mostrata dal browser
+esistono diverse API non solo web, 
+HOPPSCOTCH per testare le API
+Json javascript object notation standard data format provided by SWAPI by default
+API usata 
+script fine nel body altrimenti head  con defer 
+phind da usare
+booleani 
+stringhe
+numeri
+array
+oggetti
+trow stessa cosa di result è come retrn ma inte

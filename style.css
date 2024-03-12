@@ -1,0 +1,16 @@
+/* STYLE SITO-BOOTSTRAP */
+
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+
+/* https://nekocalc.com/pt-to-rem-converter     permette di convertire i px in REM*/
+/* style REM */
+body{
+    font-size: 22px;
+}
+.rem{
+    font-size: 2.5rem;
+    /* h1 è DUE volta e mezzo il valore base ,i rem sono proporzioni diverso dalle percentuale e viene trasmesso a tutti i children dal parent,REM nelle strutture non sono prederibile meglio vw vh*/
+}
