@@ -9,11 +9,12 @@ for(let i=1 ; i<=N;i++){
     let output="";
     if(i%3===0){
         output="fizz"
-    }
-    if(i%5===0){
+    }else if(i%5===0){
         output="buzz"
+    }else{
+        output=i;
     }
-    console.log(i)
+    console.log(output)
 };
 
 
