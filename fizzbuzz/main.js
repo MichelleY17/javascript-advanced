@@ -2,7 +2,7 @@ const N = 15;
 const fizz = 3;
 const buzz = 5;
 
-const outputContainer = document.getElementById('fizzbuzz-container');
+const fizzbuzzContainer = document.getElementById('fizzbuzz-container');
 
 for(let i = 1; i <= N; i++) {
     let output = "";
@@ -17,7 +17,7 @@ for(let i = 1; i <= N; i++) {
     }
     const outputElement = document.createElement('div');
     outputElement.textContent = output;
-    outputContainer.appendChild(outputElement);
+    fizzbuzzContainer.appendChild(outputElement);
 }
 
 
