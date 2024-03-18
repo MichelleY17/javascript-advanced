@@ -2,7 +2,8 @@ const N = 15;
 const fizz = 3;
 const buzz = 5;
 
-const fizzbuzzContainer = document.getElementById('fizzbuzz-container');
+const fizzbuzzContainer = document.getElementById('fizzbuzz-box');
+const btn = document.getElementById('btn');
 
 for(let i = 1; i <= N; i++) {
     let output = "";
@@ -19,6 +20,22 @@ for(let i = 1; i <= N; i++) {
     outputElement.textContent = output;
     fizzbuzzContainer.appendChild(outputElement);
 }
+
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function changeBackgroundColor() {
+  fizzbuzzContainer.style.backgroundColor = getRandomColor();
+}
+
+btn.addEventListener('click', changeBackgroundColor);
+
 
 
 
