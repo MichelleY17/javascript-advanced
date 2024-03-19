@@ -9,7 +9,7 @@
 /* end reset */
 
 body{
-    background: rgb(229, 226, 226);
+    background: rgb(153, 70, 70);
 }
 
 .container{
@@ -22,9 +22,11 @@ body{
 
 .game-rules{
     background: black;
+    border: 1px solid yellow;
     font-size: 113px;
     color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 30px;
+
 
 }
 
@@ -38,8 +40,8 @@ body{
     color: #fff;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     background-color: #fff;
     color:#000;
