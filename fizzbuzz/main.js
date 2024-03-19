@@ -6,11 +6,12 @@ const gameRulesContainer = document.querySelector('.game-rules');
 btn.addEventListener('click', ()=> {
   gameRulesContainer.style.display = 'none';
   fizzbuzzContainer.style.display = 'grid';
-  
+  const fizzWorld= document.querySelector('input[name="fizz-name"]').value;
+  const buzzWorld= document.querySelector('input[name="buzz-name"]').value;
   const maxNumber = parseInt(document.querySelector('input[name="number-max"]').value);
   const n1 = parseInt(document.querySelector('input[name="number-fizz"]').value);
   const n2 = parseInt(document.querySelector('input[name="number-buzz"]').value);
-  const fizzBuzzResults = fizzBuzzFunction(maxNumber, n1, n2);
+  const fizzBuzzResults = fizzBuzzFunction(maxNumber, n1, n2, fizzWorld, buzzWorld);
   displayFizzBuzzResults(fizzBuzzResults);
 });
 btnReturn.addEventListener('click', ()=>{
@@ -18,7 +19,7 @@ btnReturn.addEventListener('click', ()=>{
   fizzbuzzContainer.style.display = 'none';
 });
 
-const fizzBuzzFunction = (maxNumber, n1, n2, fizzWord = 'Fizz', buzzWord = 'Buzz') => {
+const fizzBuzzFunction = (maxNumber, n1, n2, fizzWord , buzzWord ) => {
   const output = [];
   for (let i = 1; i <= maxNumber; i++) {
     if (i % n1 === 0 && i % n2 === 0) {
