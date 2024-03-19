@@ -30,9 +30,13 @@ body{
 
 .element{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
-
+.element input{
+    background: #000;
+    color: #fff;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
